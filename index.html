@@ -6,19 +6,43 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no"/>
 	<title></title>
 	<link rel="stylesheet" href="./css/index.css">
-	<script>
-      (function() {
-         setRem();
-         window.addEventListener('orientation' in window ? "deviceorientation":"resize",setRem);
-         function setRem(){
-            var html = document.documentElement;
-            var htmlWidth = html.getBoundingClientRect().width;
-            html.style.fontSize = htmlWidth / 15 + "px";
-         }
-      })();
-   </script>
+	<script src="./js/rem.js"></script>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+   	<script src="./js/index.js"></script>
 </head>
 <body>
-	
+	<div id="banner">
+		<ul class="ad">
+			<li><img src="./img/img_banner@2x.png" alt=""></li>
+			<li><img src="./img/img_banner@2x.png" alt=""></li>
+			<li><img src="./img/img_banner@2x.png" alt=""></li>
+		</ul>
+		<ul class="nav">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div id="search">
+		<input type="text" placeholder="门店名称">
+		<button>购买会员卡</button>
+		<div class="triangle"></div>
+	</div>
+	<div id="content">
+		<ul>
+			<li><img src="./img/img_pic1@2x.png" alt=""></li>
+			<li><img src="./img/img_pic2@2x.png" alt=""></li>
+			<li><img src="./img/img_pic3@2x.png" alt=""></li>
+		</ul>
+	</div>
+	<div id="mask"></div>
+	<div id="newPeople">
+		<button class="close"></button>
+		<img src="./img/img_tcyhq@2x.png" alt="">
+		<button class="receive">立即领券</button>
+		<p class="name">新人优惠券</p>
+		<p class="dollar">￥</p>
+		<p class="num">10</p>
+	</div>
 </body>
 </html>
