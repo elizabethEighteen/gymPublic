@@ -147,3 +147,121 @@ p {
   bottom: 0;
   right: 0.8rem;
 }
+#con .card .lineH {
+  width: 14.12rem;
+  height: 0.04rem;
+  background-color: #666;
+  position: absolute;
+  left: 0;
+  bottom: 1.68rem;
+}
+#con .card .lineV {
+  width: 0.04rem;
+  height: 1.68rem;
+  background-color: #666;
+  position: absolute;
+  left: 7.04rem;
+  bottom: 0;
+}
+#mask {
+  display: none;
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#basicInfoDialog {
+  display: none;
+  width: 13.28rem;
+  height: 12.8rem;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  position: fixed;
+  top: 5.4rem;
+  left: 0.88rem;
+}
+#basicInfoDialog .mainTitle {
+  width: 3.2rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  color: #333;
+  background: url(../img/icon_sm@2x.png) no-repeat 0 center;
+  background-size: 0.56rem 0.56rem;
+  padding-left: 0.92rem;
+  position: absolute;
+  top: 0.84rem;
+  left: 4.84rem;
+}
+#basicInfoDialog .bigHeadImage {
+  width: 2.64rem;
+  height: 2.64rem;
+  position: absolute;
+  top: 2.24rem;
+  left: 5.32rem;
+}
+#basicInfoDialog ul {
+  width: 12.4rem;
+  height: 5.16rem;
+  position: absolute;
+  top: 5.48rem;
+  left: 0.44rem;
+}
+#basicInfoDialog ul li {
+  width: 12.4rem;
+  height: 1.68rem;
+  border-bottom: 0.04rem solid #ccc;
+  position: relative;
+}
+#basicInfoDialog ul li .title {
+  width: 1.6rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #666;
+  position: absolute;
+  left: 0.52rem;
+  top: 0.6rem;
+}
+#basicInfoDialog ul li .detail {
+  width: 1.6rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #666;
+  position: absolute;
+  right: 0.52rem;
+  top: 0.6rem;
+}
+#useInstruction {
+  display: none;
+  width: 13.28rem;
+  height: 8.04rem;
+  background-color: #fff;
+  position: fixed;
+  top: 8rem;
+  left: 0.88rem;
+}
+#useInstruction .title {
+  width: 3.2rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  color: #333333;
+  background: url(../img/icon_sm@2x.png) no-repeat 0 0.08rem;
+  background-size: 0.56rem 0.56rem;
+  padding-left: 0.88rem;
+  position: absolute;
+  top: 0.84rem;
+  left: 4.84rem;
+}
+#useInstruction .content {
+  width: 11.4rem;
+  line-height: 0.72rem;
+  font-size: 0.52rem;
+  color: #333;
+  position: absolute;
+  top: 2.2rem;
+  left: 0.92rem;
+}

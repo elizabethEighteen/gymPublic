@@ -1,0 +1,446 @@
+@import "reset.less";
+#con {
+	width: 375/@r;
+	height: 200/@r;
+	position: relative;
+	.card {
+		width: 353/@r;
+		height: 195/@r;
+		background: url(../img/img_card@2x.png) no-repeat;
+		background-size: 353/@r 195/@r;
+		position: absolute;
+		top: 9/@r;
+		left: 11/@r;
+		.cardType {
+			width: 60/@r;
+			height: 26/@r;
+			line-height: 26/@r;
+			font-size: 26/@r;
+			color: #ECCA4C;
+			position: absolute;
+			top: 31/@r;
+			left: 21/@r;
+		}
+		.dateNumberTitle {
+			width: 70/@r;
+			height: 13/@r;
+			line-height: 13/@r;
+			font-size: 13/@r;
+			color: #fff;
+			position: absolute;
+			top: 86/@r;
+			left: 21/@r;
+		}
+		.dataNumberDetail {
+			width: 120/@r;
+			height: 26/@r;
+			line-height: 26/@r;
+			font-size: 26/@r;
+			color: #ECCA4C;
+			position: absolute;
+			top: 110/@r;
+			left: 21/@r;
+			span{
+				color: #fff;
+			}
+		}
+		.oldPrice {
+			width: 100/@r;
+			height: 13/@r;
+			line-height: 13/@r;
+			font-size: 13/@r;
+			text-align: right;
+			color: #E6E6E6;
+			position: absolute;
+			top: 86/@r;
+			right: 21/@r;
+		}
+		.nowPrice {
+			width: 100/@r;
+			height: 13/@r;
+			line-height: 13/@r;
+			font-size: 13/@r;
+			text-align: right;
+			color: #FC665F;
+			position: absolute;
+			top: 115/@r;
+			right: 21/@r;
+		}
+		.useInfo {
+			width: 156/@r;
+			height: 40/@r;
+			font-size: 14/@r;
+			background-color: #000000;
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 20/@r;
+		}
+		.basicInfo {
+			width: 156/@r;
+			height: 40/@r;
+			font-size: 14/@r;
+			color: #ECCA4C;
+			background-color: #000000;
+			position: absolute;
+			bottom: 0;
+			right: 20/@r;
+		}
+		.lineH {
+			width: 353/@r;
+			height: 1/@r;
+			background-color: #666;
+			position: absolute;
+			left: 0;
+			bottom: 42/@r;
+		}
+		.lineV {
+			width: 1/@r;
+			height: 42/@r;
+			background-color: #666;
+			position: absolute;
+			left: 176/@r;
+			bottom: 0;
+		}
+	}
+}
+#mask {
+	display: none;
+	width: 375/@r;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#writeInfo {
+	display: none;
+	width: 332/@r;
+	height: 423/@r;
+	position: fixed;
+	top: 48/@r;
+	left: 22/@r;
+	background-color: #fff;
+	border-radius: 10/@r;
+	h3 {
+		width: 200/@r;
+		height: 17/@r;
+		line-height: 17/@r;
+		font-size: 17/@r;
+		font-weight: normal;
+		color: #333;
+		position: absolute;
+		top: 21/@r;
+		left: 121/@r;
+		padding-left: 22/@r;
+		background: url(../img/icon_write@2x.png) no-repeat;
+		background-size: 14/@r 14/@r;
+	}
+	.name {
+		width: 42/@r;
+		height: 14/@r;
+		line-height: 14/@r;
+		font-size: 14/@r;
+		color: #333;
+		position: absolute;
+		top: 68/@r;
+		left: 22/@r;
+	}
+	.gender {
+		width: 42/@r;
+		height: 14/@r;
+		line-height: 14/@r;
+		font-size: 14/@r;
+		color: #333;
+		position: absolute;
+		top: 116/@r;
+		left: 22/@r;
+	}
+	.grade {
+		width: 42/@r;
+		height: 14/@r;
+		line-height: 14/@r;
+		font-size: 14/@r;
+		color: #333;
+		position: absolute;
+		top: 164/@r;
+		left: 22/@r;
+	}
+	.nameSelector {
+		width: 247/@r;
+		height: 38/@r;
+		box-sizing: border-box;
+		background-color: #FAFAFA;
+		border: 1/@r solid #ccc;
+		color: #999;
+		font-size: 14/@r;
+		text-indent: 1em;
+		position: absolute;
+		top: 56/@r;
+		right: 21/@r;
+
+	}
+	.genderSelector {
+		width: 247/@r;
+		height: 38/@r;
+		box-sizing: border-box;
+		background-color: #FAFAFA;
+		border: 1/@r solid #ccc;
+		color: #999;
+		font-size: 14/@r;
+		line-height: 36/@r;
+		text-indent: 1em;
+		position: absolute;
+		top: 104/@r;
+		right: 21/@r;
+		strong {
+			width: 11/@r;
+			height: 11/@r;
+			background: url(../img/icon_getclick@2x.png) no-repeat;
+			background-size: 11/@r 11/@r;
+			position: absolute;
+			top: 14/@r;
+			right: 8/@r;
+		}
+	}
+	.gradeSelector {
+		width: 247/@r;
+		height: 38/@r;
+		box-sizing: border-box;
+		background-color: #FAFAFA;
+		border: 1/@r solid #ccc;
+		color: #999;
+		font-size: 14/@r;
+		line-height: 36/@r;
+		text-indent: 1em;
+		position: absolute;
+		top: 152/@r;
+		right: 21/@r;
+		strong {
+			width: 11/@r;
+			height: 11/@r;
+			background: url(../img/icon_getclick@2x.png) no-repeat;
+			background-size: 11/@r 11/@r;
+			position: absolute;
+			top: 14/@r;
+			right: 8/@r;
+		}
+	}
+	.camero {
+		width: 92/@r;
+		height: 92/@r;
+		box-sizing: border-box;
+		border: 1/@r solid #ccc;
+		background-color: #FAFAFA;
+		background: url(../img/icon_camera@2x.png) no-repeat 28/@r 32/@r;
+		background-size: 37/@r 29/@r;
+		position: absolute;
+		top: 208/@r;
+		left: 120/@r;
+	}
+	.sure {
+		width: 242/@r;
+		height: 46/@r;
+		border-radius: 3/@r;
+		background-color: #ECCA4C;
+		color: #000;
+		font-size: 17/@r;
+		position: absolute;
+		top: 338/@r;
+		left: 45/@r;
+	}
+}
+#pay {
+	display: none;
+	width: 375/@r;
+	height: 377/@r;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	h3 {
+		width: 375/@r;
+		height: 50/@r;
+		background-color: #FAFAFA;
+		color: #333;
+		font-size: 17/@r;
+		font-weight: normal;
+		line-height: 50/@r;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		span {
+			width: 14/@r;
+			height: 14/@r;
+			background: url(../img/icon_closed1@2x.png) no-repeat;
+			background-size: 14/@r 14/@r;
+			position: absolute;
+			top: 19/@r;
+			right: 19/@r;
+		}
+	}
+	.inviteNumber {
+		width: 50/@r;
+		height: 14/@r;
+		line-height: 14/@r;
+		font-size: 14/@r;
+		color: #333;
+		position: absolute;
+		top: 82/@r;
+		left: 22/@r;
+	}
+	.inviteNumberInput {
+		width: 275/@r;
+		height: 37/@r;
+		box-sizing: border-box;
+		background-color: #FAFAFA;
+		border: 1/@r solid #CCCCCC;
+		color: #999999;
+		text-indent: 1em;
+		position: absolute;
+		top: 70/@r;
+		right: 22/@r;
+	}
+	ul {
+		width: 351/@r;
+		height: 180/@r;
+		position: absolute;
+		top: 120/@r;
+		left: 12/@r;
+		// background-color: red;
+		li {
+			width: 351/@r;
+			height: 42/@r;
+			border-bottom: 1px solid #EEEEEE;
+			position: relative;
+			.title {
+				width: 90/@r;
+				height: 14/@r;
+				line-height: 14/@r;
+				font-size: 14/@r;
+				color: #333333;
+				position: absolute;
+				top: 14/@r;
+				left: 22/@r;
+			}
+			.couponDetail {
+				width: 100/@r;
+				height: 14/@r;
+				line-height: 14/@r;
+				font-size: 14/@r;
+				color: #333;
+				text-align: right;
+				position: absolute;
+				top: 14/@r;
+				right: 43/@r;
+			}
+			.triangle {
+				width: 9/@r;
+				height: 16/@r;
+				background: url(../img/icon_getmore@2x.png) no-repeat;
+				background-size: 9/@r 16/@r;
+				position: absolute;
+				top: 13/@r;
+				right: 22/@r;
+			}
+			.priceDetail {
+				width: 100/@r;
+				height: 14/@r;
+				line-height: 14/@r;
+				font-size: 14/@r;
+				color: #333;
+				text-align: right;
+				position: absolute;
+				top: 14/@r;
+				right: 22/@r;
+			}
+			.titlewithImage {
+				width: 100/@r;
+				height: 24/@r;
+				line-height: 24/@r;
+				font-size: 14/@r;
+				color: #333;
+				padding-left: 36/@r;
+				background: url(../img/icon_pay_zfb@2x.png) no-repeat;
+				background-size: 24/@r 24/@r;
+				position: absolute;
+				top: 10/@r;
+				left: 22/@r;
+			}
+			.titlewithImageWechat {
+				width: 100/@r;
+				height: 24/@r;
+				line-height: 24/@r;
+				font-size: 14/@r;
+				color: #333;
+				padding-left: 36/@r;
+				background: url(../img/icon_pay_wx@2x.png) no-repeat;
+				background-size: 24/@r 24/@r;
+				position: absolute;
+				top: 10/@r;
+				left: 22/@r;
+			}
+			.paySlected {
+				width: 18/@r;
+				height: 18/@r;
+				background: url(../img/icon_choiced@2x.png) no-repeat;
+				background-size: 18/@r 18/@r;
+				position: absolute;
+				top: 11/@r;
+				right: 22/@r;
+			}
+			.payNotSelected {
+				width: 18/@r;
+				height: 18/@r;
+				background: url(../img/icon_choice@2x.png) no-repeat;
+				background-size: 18/@r 18/@r;
+				position: absolute;
+				top: 11/@r;
+				right: 22/@r;
+			}
+		}
+		
+	}
+	button {
+		width: 241/@r;
+		height: 45/@r;
+		background-color: #ECCA4C;
+		color: #333333;
+		font-size: 17/@r;
+		position: absolute;
+		bottom: 20/@r;
+		left: 67/@r;
+		border-radius: 3/@r;
+	}
+}
+#useInstruction {
+	display: none;
+	width: 332/@r;
+	height: 201/@r;
+	background-color: #fff;
+	position: fixed;
+	top: 200/@r;
+	left: 22/@r;
+	.title {
+		width: 80/@r;
+		height: 17/@r;
+		line-height: 17/@r;
+		font-size: 17/@r;
+		color: #333333;
+		background: url(../img/icon_sm@2x.png) no-repeat 0 2/@r;
+		background-size: 14/@r 14/@r;
+		padding-left: 22/@r;
+		position: absolute;
+		top: 21/@r;
+		left: 121/@r;
+	}
+	.content {
+		width: 285/@r;
+		line-height: 18/@r;
+		font-size: 13/@r;
+		color: #333;
+		position: absolute;
+		top: 55/@r;
+		left: 23/@r;
+	}
+}

@@ -1,0 +1,89 @@
+@import "reset.less";
+#con {
+	width: 375/@r;
+	height: 667/@r;
+	position: relative;
+	.bgImg {
+		width: 315/@r;
+		height: 400/@r;
+		background: url(../img/bg.png) no-repeat;
+		background-size: 315/@r 400/@r;
+		position: absolute;
+		top: 40/@r;
+		left: 30/@r;
+		.mask {
+			width: 315/@r;
+			height: 131/@r;
+			background-color: rgba(0,0,0,.8);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			.mark {
+				width: 103/@r;
+				height: 103/@r;
+				border: 1/@r solid #ccc;
+				position: absolute;
+				left: 20/@r;
+				bottom: 14/@r;
+				img {
+					width: 95/@r;
+					height: 95/@r;
+					position: absolute;
+					top: 4/@r;
+					left: 4/@r;
+				}
+			}
+			.inviteNumber {
+					width: 120/@r;
+					height: 14/@r;
+					line-height: 14/@r;
+					font-size: 14/@r;
+					color: #ECCA4C;
+					position: absolute;
+					top: 31/@r;
+					left: 162/@r;
+			}
+			.tipOne {
+				width: 120/@r;
+				height: 13/@r;
+				line-height: 13/@r;
+				font-size: 13/@r;
+				color: #fff;
+				position: absolute;
+				top: 64/@r;
+				left: 162/@r;
+			}
+			.tipTwo {
+				width: 120/@r;
+				height: 13/@r;
+				line-height: 13/@r;
+				font-size: 13/@r;
+				color: #fff;
+				position: absolute;
+				top: 89/@r;
+				left: 162/@r;
+			}
+		}
+	}
+	.typeDetail {
+		width: 200/@r;
+		height: 13/@r;
+		line-height: 13/@r;
+		font-size: 13/@r;
+		color: #333;
+		position: absolute;
+		top: 460/@r;
+		left: 32/@r;
+	}
+	button {
+		width: 311/@r;
+		height: 45/@r;
+		border-radius: 4/@r;
+		background-color: #ECCA4C;
+		font-size: 17/@r;
+		color: #333;
+		position: absolute;
+		left: 32/@r;
+		top: 512/@r;
+	}
+}

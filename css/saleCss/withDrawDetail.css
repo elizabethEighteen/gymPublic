@@ -1,0 +1,215 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+body {
+  background-color: #F7F7F7;
+}
+#head {
+  width: 15rem;
+  height: 1.68rem;
+  background-color: #010101;
+  position: relative;
+}
+#head .year {
+  width: 2.16rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.6rem;
+  background: url(../../img/icon_getxl@2x.png) no-repeat;
+  background-size: 0.44rem 0.28rem;
+  background-position: center right;
+  position: absolute;
+  right: 7.24rem;
+  top: 0.56rem;
+}
+#head .month {
+  width: 1.4rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: right;
+  padding-right: 0.6rem;
+  background: url(../../img/icon_getxl@2x.png) no-repeat;
+  background-size: 0.44rem 0.28rem;
+  background-position: center right;
+  position: absolute;
+  right: 5.08rem;
+  top: 0.56rem;
+}
+#head .withDrawInstruction {
+  width: 2.64rem;
+  height: 1.68rem;
+  color: #ECCA4C;
+  background-color: #010101;
+  font-size: 0.52rem;
+  position: absolute;
+  top: 0;
+  right: 0.24rem;
+}
+#middle {
+  width: 15rem;
+  height: 1.8rem;
+  background-color: #FFFCF0;
+  position: relative;
+  margin-bottom: 0.36rem;
+}
+#middle .alreadyWithDrawTitel {
+  width: 3.6rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #333;
+  position: absolute;
+  top: 0.64rem;
+  left: 0.48rem;
+}
+#middle .alreadyWithDrawDetail {
+  width: 4rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  position: absolute;
+  top: 0.64rem;
+  right: 0.48rem;
+}
+#con {
+  width: 15rem;
+}
+#con ul {
+  width: 15rem;
+}
+#con ul li {
+  width: 15rem;
+  height: 2.44rem;
+  border-bottom: 0.04rem solid #ccc;
+  background-color: #fff;
+  position: relative;
+}
+#con ul li .Title {
+  width: 1.6rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #333;
+  position: absolute;
+  top: 0.52rem;
+  left: 0.48rem;
+}
+#con ul li .aMount {
+  width: 1.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  position: absolute;
+  top: 0.52rem;
+  right: 0.48rem;
+}
+#con ul li .date {
+  width: 7.2rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #999;
+  position: absolute;
+  top: 1.52rem;
+  left: 0.48rem;
+}
+#con ul li .statusApply {
+  width: 2rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #666;
+  text-align: right;
+  position: absolute;
+  top: 1.52rem;
+  right: 0.48rem;
+}
+#con ul li .statusBack {
+  width: 2rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #FF4C4C;
+  text-align: right;
+  position: absolute;
+  top: 1.52rem;
+  right: 0.48rem;
+}
+#con ul li .statusSuccess {
+  width: 2rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #ECCA4C;
+  text-align: right;
+  position: absolute;
+  top: 1.52rem;
+  right: 0.48rem;
+}

@@ -93,18 +93,27 @@
 		top: 0;
 		left: 21/@r;
 	}
-	.receiveProtol {
-		width: 180/@r;
+	.isSelected {
+		width: 12/@r;
 		height: 12/@r;
 		background: url(../img/icon_xyxz_selected@2x.png) no-repeat;
 		background-size: 12/@r 12/@r;
-		padding-left: 20/@r;
+		position: absolute;
+		top: 75/@r;
+		left: 92/@r;
+		&.active {
+			background: url(../img/icon_xyxz@2x.png) no-repeat;
+		}
+	}
+	.receiveProtol {
+		width: 180/@r;
+		height: 12/@r;
 		line-height: 12/@r;
 		font-size: 12/@r;
 		color: #999;
 		position: absolute;
 		top: 75/@r;
-		left: 92/@r;
+		left: 112/@r;
 		a {
 			color: #ECCA4C;
 		}

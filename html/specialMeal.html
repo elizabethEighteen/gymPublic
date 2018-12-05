@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title></title>
+	<link rel="stylesheet" href="../css/specialMeal.css">
+	<script src="../js/rem.js"></script>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/specialMeal.js"></script>
+</head>
+<body>
+	<div id="con">
+		<div class="card">
+			<p class="cardType">次卡</p>
+			<p class="dateNumberTitle">有效期</p>
+			<p class="dataNumberDetail">90<span>天</span></p>
+			<p class="oldPrice">原价: ￥368</p>
+			<p class="nowPrice">现价: ￥368</p>
+			<button class="useInfo">使用说明</button>
+			<button class="basicInfo">立即购买</button>
+			<div class="lineH"></div>
+			<div class="lineV"></div>
+		</div>
+	</div>
+	<div id="mask"></div>
+	<div id="writeInfo">
+		<h3>填写信息</h3>
+		<p class="name">姓名</p>
+		<input class="nameSelector" type="text" placeholder="请输入">
+		<p class="gender">性别</p>
+		<div class="genderSelector">请选择性别<strong></strong></div>
+		<p class="grade">年级</p>
+		<div class="gradeSelector">请选择年级<strong></strong></div>
+		<div class="camero"></div>
+		<button class="sure">确认并支付</button>
+	</div>
+	<div id="pay">
+		<h3>次卡<span class="close"></span></h3>
+		<p class="inviteNumber">邀请码:</p>
+		<input class="inviteNumberInput" type="text" placeholder="请输入邀请码">
+		<ul>
+			<li class="coupon"><p class="title">优惠券</p><p class="couponDetail">-12.00元</p><span class="triangle"></span></li>
+			<li><p class="title">会员卡价格</p><p class="priceDetail">666.00元</p></li>
+			<li><p class="titlewithImageWechat">微信支付</p><strong class="paySlected"></strong></li>
+			<li><p class="titlewithImage">支付宝支付</p><strong class="payNotSelected"></strong></li>
+		</ul>
+		<button>确认支付</button>
+	</div>
+	<div id="useInstruction">
+		<p class="title">使用说明</p>
+		<p class="content">来点文字blahblahblah来点文字blahblahblah来点文字blahblahblah来点文字blahblahblah</p>
+	</div>
+</body>
+</html>

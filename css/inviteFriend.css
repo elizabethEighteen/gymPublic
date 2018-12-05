@@ -1,0 +1,147 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+#con {
+  width: 15rem;
+  height: 26.68rem;
+  position: relative;
+}
+#con .bgImg {
+  width: 12.6rem;
+  height: 16rem;
+  background: url(../img/bg.png) no-repeat;
+  background-size: 12.6rem 16rem;
+  position: absolute;
+  top: 1.6rem;
+  left: 1.2rem;
+}
+#con .bgImg .mask {
+  width: 12.6rem;
+  height: 5.24rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#con .bgImg .mask .mark {
+  width: 4.12rem;
+  height: 4.12rem;
+  border: 0.04rem solid #ccc;
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.56rem;
+}
+#con .bgImg .mask .mark img {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 0.16rem;
+}
+#con .bgImg .mask .inviteNumber {
+  width: 4.8rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #ECCA4C;
+  position: absolute;
+  top: 1.24rem;
+  left: 6.48rem;
+}
+#con .bgImg .mask .tipOne {
+  width: 4.8rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  font-size: 0.52rem;
+  color: #fff;
+  position: absolute;
+  top: 2.56rem;
+  left: 6.48rem;
+}
+#con .bgImg .mask .tipTwo {
+  width: 4.8rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  font-size: 0.52rem;
+  color: #fff;
+  position: absolute;
+  top: 3.56rem;
+  left: 6.48rem;
+}
+#con .typeDetail {
+  width: 8rem;
+  height: 0.52rem;
+  line-height: 0.52rem;
+  font-size: 0.52rem;
+  color: #333;
+  position: absolute;
+  top: 18.4rem;
+  left: 1.28rem;
+}
+#con button {
+  width: 12.44rem;
+  height: 1.8rem;
+  border-radius: 0.16rem;
+  background-color: #ECCA4C;
+  font-size: 0.68rem;
+  color: #333;
+  position: absolute;
+  left: 1.28rem;
+  top: 20.48rem;
+}
