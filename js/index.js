@@ -58,4 +58,35 @@ $(function () {
 			window.location.href = './html/phurchaseCard.html';
 		});
 	})();
+	/*提醒登录*/
+	(function (){
+		var $lis = $('#content li');
+		var $mask = $('#mask');
+		var $login = $('#login');
+		var $cancel = $login.find('.cancel');
+		var $sure = $login.find('.sure');
+		$lis.on('click',function(){
+			$mask.css('display','block');
+			$login.css('display','block');
+		});
+		$cancel.on('click',function () {
+			$mask.css('display','none');
+			$login.css('display','none');
+		});
+		$sure.on('click',function(){
+			window.location.href = './html/login.html';
+		});
+	})();
+	/*扫码进场*/
+	(function (){
+		var $tip = $('#tip');
+		var timmer = null;
+		$('#banner').on('click',function(){
+			clearInterval(timmer);
+			$tip.show();
+			timmer = setTimeout(function(){
+				$tip.hide();
+			},3000);
+		});
+	})();
 });

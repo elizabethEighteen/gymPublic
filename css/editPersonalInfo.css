@@ -1,0 +1,203 @@
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+#head {
+  width: 15rem;
+  height: 5.56rem;
+  position: relative;
+}
+#head img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.48rem;
+  position: absolute;
+  top: 1.28rem;
+  left: 6rem;
+}
+#con {
+  width: 15rem;
+  height: 10.96rem;
+  position: relative;
+}
+#con .basicInfoUl {
+  width: 15rem;
+  height: 6rem;
+}
+#con .basicInfoUl li {
+  width: 15rem;
+  height: 1.96rem;
+  border-bottom: 0.04rem solid #E6E6E6;
+  position: relative;
+}
+#con .basicInfoUl li p {
+  width: 1.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #333;
+  position: absolute;
+  top: 0.72rem;
+  left: 0.48rem;
+}
+#con .basicInfoUl li .nameInput {
+  width: 4.4rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #808080;
+  position: absolute;
+  left: 10.32rem;
+  top: 0.8rem;
+}
+#con .basicInfoUl li .genderMan {
+  width: 0.56rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #333;
+  background: url(../img/icon_choiced@2x.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  padding-left: 1.28rem;
+  position: absolute;
+  top: 0.56rem;
+  left: 10.64rem;
+}
+#con .basicInfoUl li .genderWoman {
+  width: 0.56rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.56rem;
+  color: #333;
+  background: url(../img/icon_choice@2x.png) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  padding-left: 1.28rem;
+  position: absolute;
+  top: 0.56rem;
+  left: 12.92rem;
+}
+#con .basicInfoUl li .selectBirthday {
+  width: 4rem;
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.48rem;
+  color: #808080;
+  text-align: right;
+  background: url(../img/icon_calendar@2x.png) no-repeat;
+  background-size: 0.72rem 0.72rem;
+  background-position: right;
+  padding-right: 1.2rem;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.72rem;
+}
+#con .bindAccountUl {
+  width: 15rem;
+  height: 4.96rem;
+  position: relative;
+}
+#con .bindAccountUl li {
+  width: 15rem;
+  height: 2.44rem;
+  background-color: #FCFCFC;
+  border-bottom: 0.04rem solid #E6E6E6;
+  position: relative;
+}
+#con .bindAccountUl li img {
+  width: 1.12rem;
+  height: 1.12rem;
+  position: absolute;
+  top: 0.64rem;
+  left: 0.48rem;
+}
+#con .bindAccountUl li .content {
+  width: 4rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #333;
+  position: absolute;
+  top: 0.96rem;
+  left: 2.08rem;
+}
+#con .bindAccountUl li input {
+  width: 4rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.48rem;
+  color: #808080;
+  position: absolute;
+  top: 1rem;
+  left: 10.8rem;
+}
+#foot {
+  width: 15rem;
+  height: 10.16rem;
+  position: relative;
+}
+#foot button {
+  width: 13.32rem;
+  height: 1.84rem;
+  border-radius: 0.16rem;
+  background-color: #ECCA4C;
+  font-size: 0.68rem;
+  color: #333;
+  position: absolute;
+  top: 3.04rem;
+  left: 0.84rem;
+}

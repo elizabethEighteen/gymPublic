@@ -48,17 +48,33 @@
 			</li>
 		</ul>
 	</div>
+	<div id="mask"></div>
 	<div id="writeInfo">
 		<h3>填写信息</h3>
-		<div class="lineH"></div>
 		<p class="name">姓名</p>
-		<input type="text" placeholder="请输入">
+		<input class="nameSelector" type="text" placeholder="请输入">
 		<p class="gender">性别</p>
-		<div class="genderSelector"></div>
+		<div class="genderSelector">请选择性别<strong></strong></div>
 		<p class="grade">年级</p>
-		<div class="gradeSelector"></div>
+		<div class="gradeSelector">请选择年级<strong></strong></div>
+		<div class="camero"></div>
+		<button class="sure">确认并支付</button>
 	</div>
-		
+	<div id="pay">
+		<h3>次卡<span class="close"></span></h3>
+		<p class="inviteNumber">邀请码:</p>
+		<input class="inviteNumberInput" type="text" placeholder="请输入邀请码">
+		<ul>
+			<li class="coupon"><p class="title">优惠券</p><p class="couponDetail">-12.00元</p><span class="triangle"></span></li>
+			<li><p class="title">会员卡价格</p><p class="priceDetail">666.00元</p></li>
+			<li><p class="titlewithImageWechat">微信支付</p><strong class="paySlected"></strong></li>
+			<li><p class="titlewithImage">支付宝支付</p><strong class="payNotSelected"></strong></li>
+		</ul>
+		<button>确认支付</button>
+	</div>
+	<div id="useInstruction">
+		<p class="title">使用说明</p>
+		<p class="content">来点文字blahblahblah来点文字blahblahblah来点文字blahblahblah来点文字blahblahblah</p>
 	</div>
 </body>
 </html>

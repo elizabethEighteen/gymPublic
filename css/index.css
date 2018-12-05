@@ -11,6 +11,7 @@ button {
   -webkit-appearance: none;
   border-radius: 0;
   border: none;
+  background-color: #fff;
 }
 body {
   /*禁止选中文字*/
@@ -122,7 +123,7 @@ p {
 #search .triangle {
   width: 0.36rem;
   height: 0.4rem;
-  background: url(../img/icon_getclick@2x.png);
+  background: url(../img/icon_getclick@2x.png) no-repeat;
   background-size: 0.36rem 0.4rem;
   position: absolute;
   top: 1.28rem;
@@ -169,7 +170,7 @@ p {
   position: absolute;
   top: -0.4rem;
   right: 2.08rem;
-  background: url(../img/icon_closed@2x.png);
+  background: url(../img/icon_closed@2x.png) no-repeat;
   background-size: 1.08rem 1.08rem;
 }
 #newPeople img {
@@ -216,4 +217,91 @@ p {
   position: absolute;
   left: 5.92rem;
   top: 2rem;
+}
+#login {
+  display: none;
+  width: 13.28rem;
+  height: 6.04rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  position: fixed;
+  top: 6rem;
+  left: 0.88rem;
+}
+#login h3 {
+  width: 1.6rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  font-weight: normal;
+  color: #333;
+  background: url(../img/icon_dlts@2x.png) no-repeat 0 0.04rem;
+  background-size: 0.56rem 0.56rem;
+  padding-left: 0.88rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 5.56rem;
+}
+#login p {
+  width: 13.28rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top: 2.28rem;
+  left: 0;
+}
+#login .sure {
+  width: 6.2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #ECCA4C;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0.4rem;
+}
+#login .cancel {
+  width: 6.2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #999;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0.4rem;
+}
+#login .lineH {
+  width: 13.28rem;
+  height: 0.04rem;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 1.68rem;
+  left: 0;
+}
+#login .lineV {
+  width: 0.04rem;
+  height: 1.68rem;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  left: 6.6rem;
+}
+#tip {
+  display: none;
+  width: 7rem;
+  height: 0.88rem;
+  border-radius: 0.36rem;
+  background-color: #fff;
+  line-height: 0.88rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #333;
+  position: fixed;
+  top: 11.2rem;
+  left: 4rem;
 }

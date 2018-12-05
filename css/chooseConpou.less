@@ -1,0 +1,81 @@
+@import "reset.less";
+#con {
+	width: 375/@r;
+	position: relative;
+	ul {
+		width: 364/@r;
+		position: absolute;
+		top: 18/@r;
+		left: 11/@r;
+		li {
+			float: left;
+			width: 171/@r;
+			height: 79/@r;
+			background: url(../img/img_yhq@2x.png) no-repeat;
+			background-size: 171/@r 79/@r;
+			margin-right: 10/@r;
+			margin-bottom: 18/@r;
+			position: relative;
+			.moneySymbol {
+				width: 18/@r;
+				height: 18/@r;
+				line-height: 18/@r;
+				font-size: 18/@r;
+				font-weight: bold;
+				color: #050C00;
+				position: absolute;
+				top: 12/@r;
+				left: 12/@r;
+			}
+			.moneyAmount {
+				width: 50/@r;
+				height: 39/@r;
+				line-height: 39/@r;
+				font-size: 39/@r;
+				font-weight: bold;
+				color: #050C00;
+				position: absolute;
+				top: 15/@r;
+				left: 35/@r;
+			}
+			.couponType {
+				width: 70/@r;
+				height: 12/@r;
+				line-height: 12/@r;
+				font-size: 12/@r;
+				font-weight: bold;
+				color: #050C00;
+				position: absolute;
+				top: 36/@r;
+				left: 93/@r;
+			}
+			.expireTime {
+				width: 172/@r;
+				height: 10/@r;
+				line-height: 10/@r;
+				font-size: 10/@r;
+				font-weight: bold; 
+				color: #050C00;
+				text-align: center;
+				position: absolute;
+				bottom: 6/@r;
+				left: 0/@r;
+			}
+			.selectSymbol {
+				display: none;
+				width: 22/@r;
+				height: 22/@r;
+				background: url(../img/icon_xz@2x.png) no-repeat;
+				background-size: 22/@r 22/@r;
+				position: absolute;
+				top: -11/@r;
+				right: 11/@r;
+			}
+		}
+		.active {
+			.selectSymbol {
+				display: block;
+			}
+		}
+	}
+}
