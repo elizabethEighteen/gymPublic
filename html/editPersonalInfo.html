@@ -7,7 +7,9 @@
 	<title></title>
 	<link rel="stylesheet" href="../css/editPersonalInfo.css">
 	<script src="../js/rem.js"></script>
-	<script src="../js/jquery-1.11.0.min.js"></script>
+	<!-- <script src="../js/jquery-1.11.0.min.js"></script> -->
+	<script src="../插件/生日选择插件/js/jquery-1.5.1.js"></script>	
+	<script src="../插件/生日选择插件/js/lyz.calendar.min.js"></script>
 	<script src="../js/editPersonalInfo.js"></script>
 </head>
 <body>
@@ -22,12 +24,12 @@
 			</li>
 			<li>
 				<p>性别</p>
-				<button class="genderMan">男</button>
+				<button class="genderMan active">男</button>
 				<button class="genderWoman">女</button>
 			</li>
 			<li>
 				<p>生日</p>
-				<button class="selectBirthday">请选择生日</button>
+				<input class="selectBirthday" type="text" placeholder="请选择生日~">
 			</li>
 		</ul>
 		<ul class="bindAccountUl">

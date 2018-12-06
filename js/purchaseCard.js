@@ -53,4 +53,65 @@ $(function(){
 		});
 		
 	})();
+	/*picker*/
+	(function (){
+		var $genderBtn = $('#writeInfo .genderSelector');
+		var $gradeBtn = $('#writeInfo .gradeSelector');
+		var $genderPicker = $('#writeInfo .genderPicker');
+		var $gradePicker = $('#writeInfo .gradePicker');
+		var $genderLis = $genderPicker.find('li');
+		var $gradeUl = $gradePicker.find('ul');
+		var $gradeLis = $gradePicker.find('li');
+		/*gender*/
+		$genderBtn.on('click',function(){
+			$genderPicker.toggle();
+			$gradePicker.hide();
+		});
+		$genderLis.on('click',function(){
+			$genderBtn.html($(this).html()+`<strong></strong>`);
+			$genderPicker.hide();
+		});
+		/*grade*/
+		$gradeBtn.on('click',function(){
+			showPicker($gradePicker,$gradeUl);
+			$genderPicker.hide();
+		});
+		$gradeLis.on('click',function(){
+			$gradePicker.hide();
+			$gradeBtn.html($(this).html()+`<strong></strong>`);
+		});
+		/*选择年级按钮点击*/
+		function showPicker(pickerName,ulName) {
+		var oUl = ulName[0];
+		var n = 0;
+		pickerName.toggle();
+		oUl.onmousewheel = fn;
+
+		if (oUl.addEventListener) {
+			oUl.addEventListener('DOMMouseScroll', fn, false);
+		}
+		function fn(ev) {
+			var ev = ev || event;
+			var b = true;			
+			if (ev.wheelDelta) {
+				b = ev.wheelDelta > 0 ? true : false;
+			} else {
+				b = ev.detail < 0 ? true : false;
+			}			
+			if ( b ) {
+				n++;
+				n = n>0 ? 0 : n;
+				ulName.css('top',n*10);
+			} else {
+				n--;
+				n = n<-14 ? -14 : n;
+				ulName.css('top',n*10);
+			}
+			if (ev.preventDefault) {
+				ev.preventDefault();
+			}
+			return false;	
+		}
+	}
+	})();
 });

@@ -58,5 +58,22 @@ $(function(){
 			$exitDialog.hide();
 		});
 	})();
-	
+	/*底部tab*/
+	(function (){
+		var $indexBtn = $('#tab .index');
+		var $mineBtn = $('#tab .mine');
+		$indexBtn.on('click',function (){
+			window.location.href = '../index.html';
+		});
+		$mineBtn.on('click',function (){
+			window.location.href = '../html/mine.html';
+		});
+	})();
+	/*test*/
+	(function (){
+		var $test = $('#test');
+		$test.on('click',function (){
+			window.location.href = '../html/saleHtml/sMine.html';
+		});
+	})();
 });

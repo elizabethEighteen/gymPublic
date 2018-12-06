@@ -135,6 +135,7 @@
 #foot {
 	width: 375/@r;
 	height: 70/@r;
+	margin-bottom: 56/@r;
 	position: relative;
 	button {
 		width: 333/@r;
@@ -228,4 +229,60 @@
 		bottom: 0;
 		left: 165/@r;
 	}
+}
+#tab {
+	width: 375/@r;
+	height: 48/@r;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	.index {
+		width: 48/@r;
+		height: 20/@r;
+		background: url(../img/icon_home@2x.png) no-repeat 12/@r 4/@r;
+		background-size: 24/@r 24/@r;
+		padding-top: 28/@r;
+		line-height: 20/@r;
+		font-size: 12/@r;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 70/@r;
+		&.active {
+			background: url(../img/icon_home_selected@2x.png) no-repeat 12/@r 4/@r;
+			background-size: 24/@r 24/@r;
+			color: #ECCA4C;
+		}
+	}
+	.mine {
+		width: 48/@r;
+		height: 20/@r;
+		background: url(../img/icon_mine@2x.png) no-repeat 12/@r 4/@r;
+		background-size: 24/@r 24/@r;
+		padding-top: 28/@r;
+		line-height: 20/@r;
+		font-size: 12/@r;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 70/@r;
+		&.active {
+			background: url(../img/icon_mine_selected@2x.png) no-repeat 12/@r 4/@r;
+			background-size: 24/@r 24/@r;
+			color: #ECCA4C;
+		}
+	}
+}
+#test {
+	width: 150/@r;
+	height: 30/@r;
+	line-height: 30/@r;
+	font-size: 15/@r;
+	color: red;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
 }

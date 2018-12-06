@@ -238,3 +238,51 @@ p {
   top: 2.84rem;
   right: 0.48rem;
 }
+#datePickerYear {
+  display: none;
+  width: 2.76rem;
+  height: 4rem;
+  position: fixed;
+  right: 6.36rem;
+  top: 1.16rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+#datePickerYear .year {
+  width: 2.76rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#datePickerYear .year li {
+  width: 2.76rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  font-size: 0.56rem;
+  border-bottom: 0.04rem solid #999;
+  text-align: center;
+}
+#datePickerMonth {
+  display: none;
+  width: 2rem;
+  height: 4rem;
+  position: fixed;
+  right: 4.24rem;
+  top: 1.16rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+#datePickerMonth .year {
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#datePickerMonth .year li {
+  width: 2rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  font-size: 0.56rem;
+  border-bottom: 0.04rem solid #999;
+  text-align: center;
+}

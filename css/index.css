@@ -131,13 +131,12 @@ p {
 }
 #content {
   width: 15rem;
+  margin-bottom: 2.24rem;
+  padding-left: 0.48rem;
   position: relative;
 }
 #content ul {
   width: 14.04rem;
-  position: absolute;
-  top: 0;
-  left: 0.48rem;
 }
 #content ul li {
   width: 14.04rem;
@@ -304,4 +303,48 @@ p {
   position: fixed;
   top: 11.2rem;
   left: 4rem;
+}
+#tab {
+  width: 15rem;
+  height: 1.92rem;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#tab .index {
+  width: 1.92rem;
+  height: 0.8rem;
+  background: url(../img/icon_home@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  padding-top: 1.12rem;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 2.8rem;
+}
+#tab .index.active {
+  background: url(../img/icon_home_selected@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  color: #ECCA4C;
+}
+#tab .mine {
+  width: 1.92rem;
+  height: 0.8rem;
+  background: url(../img/icon_mine@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  padding-top: 1.12rem;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 2.8rem;
+}
+#tab .mine.active {
+  background: url(../img/icon_mine_selected@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  color: #ECCA4C;
 }

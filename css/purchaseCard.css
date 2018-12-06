@@ -11,6 +11,7 @@ button {
   -webkit-appearance: none;
   border-radius: 0;
   border: none;
+  background-color: #fff;
 }
 body {
   /*禁止选中文字*/
@@ -261,6 +262,34 @@ p {
   top: 0.56rem;
   right: 0.32rem;
 }
+#writeInfo .genderPicker {
+  display: none;
+  width: 9.88rem;
+  height: 2.96rem;
+  background-color: #FAFAFA;
+  border: 0.04rem solid #ccc;
+  border-top: none;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0.84rem;
+  top: 5.68rem;
+  overflow: hidden;
+}
+#writeInfo .genderPicker ul {
+  width: 9.88rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#writeInfo .genderPicker ul li {
+  width: 9.88rem;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.56rem;
+  border-bottom: 0.04rem solid #999;
+  text-align: center;
+  color: #999;
+}
 #writeInfo .gradeSelector {
   width: 9.88rem;
   height: 1.52rem;
@@ -283,6 +312,34 @@ p {
   position: absolute;
   top: 0.56rem;
   right: 0.32rem;
+}
+#writeInfo .gradePicker {
+  display: none;
+  width: 9.88rem;
+  height: 4.44rem;
+  background-color: #FAFAFA;
+  border: 0.04rem solid #ccc;
+  border-top: none;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0.84rem;
+  top: 7.6rem;
+  overflow: hidden;
+}
+#writeInfo .gradePicker ul {
+  width: 9.88rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#writeInfo .gradePicker ul li {
+  width: 9.88rem;
+  height: 1.44rem;
+  line-height: 1.44rem;
+  font-size: 0.56rem;
+  border-bottom: 0.04rem solid #999;
+  text-align: center;
+  color: #999;
 }
 #writeInfo .camero {
   width: 3.68rem;
