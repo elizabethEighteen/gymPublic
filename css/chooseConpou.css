@@ -11,6 +11,7 @@ button {
   -webkit-appearance: none;
   border-radius: 0;
   border: none;
+  background-color: #fff;
 }
 body {
   /*禁止选中文字*/
@@ -25,7 +26,8 @@ body * {
 a {
   text-decoration: none;
 }
-input {
+input,
+button {
   outline: none;
   vertical-align: middle;
 }
@@ -133,4 +135,23 @@ p {
 }
 #con ul .active .selectSymbol {
   display: block;
+}
+#foot {
+  width: 15rem;
+  height: 2.8rem;
+  margin-bottom: 2.24rem;
+  position: fixed;
+  left: 0;
+  bottom: 1.2rem;
+}
+#foot .sure {
+  width: 13.32rem;
+  height: 1.84rem;
+  border-radius: 0.16rem;
+  background-color: #ECCA4C;
+  color: #333333;
+  font-size: 0.68rem;
+  position: absolute;
+  top: 0.24rem;
+  left: 0.84rem;
 }

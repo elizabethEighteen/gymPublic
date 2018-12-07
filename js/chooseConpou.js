@@ -11,5 +11,11 @@ $(function(){
 		});
 
 	})();
-
+	/*点击确定*/
+	(function(){
+		var $sureBtn = $('#foot .sure');
+		$sureBtn.on('click',function(){
+			window.location.href = '../html/phurchaseCard.html';
+		});
+	})();
 });

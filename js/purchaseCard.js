@@ -19,10 +19,29 @@ $(function(){
 		var $coupon = $pay.find('.coupon');//选择优惠券
 		var $useInstruction = $('#useInstruction');
 		var $isUseInstruction = false;
+		var isLogin = true;
 
 		$phurchase.on('click',function () {
-			$mask.css('display','block');
-			$writeInfo.css('display','block');
+			if (!isLogin) {
+				/*提醒登录*/
+				var $login = $('#login');
+				var $cancel = $login.find('.cancel');
+				var $sure = $login.find('.sure');
+				$mask.css('display','block');
+				$login.css('display','block');
+				
+				$cancel.on('click',function () {
+					$mask.css('display','none');
+					$login.css('display','none');
+				});
+				$sure.on('click',function(){
+					window.location.href = '../html/login.html';
+				});	
+			}else{
+				$mask.css('display','block');
+				$writeInfo.css('display','block');
+			}
+			
 		});//点击购买
 		$sureButton.on('click',function(){
 			$writeInfo.css('display','none');
