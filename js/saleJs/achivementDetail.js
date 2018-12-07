@@ -30,8 +30,8 @@ $(function(){
 		var oUl = ulName[0];
 		var n = 0;
 		pickerName.toggle();
-		oUl.onmousewheel = fn;
 
+		oUl.onmousewheel = fn;
 		if (oUl.addEventListener) {
 			oUl.addEventListener('DOMMouseScroll', fn, false);
 		}
@@ -57,5 +57,27 @@ $(function(){
 			}
 			return false;	
 		}
+		/*touch*/
+		var x,endx;
+			var nowtop = parseInt(ulName.css('top'));
+			ulName[0].addEventListener('touchstart',function(ev){
+				var touch = ev.targetTouches[0];
+				 x = parseInt(touch.pageY);
+				 nowtop = parseInt(ulName.css('top'));
+				;
+			});
+			ulName[0].addEventListener('touchmove',function(ev){
+				var touch = ev.targetTouches[0];
+				endx = parseInt(touch.pageY);				
+				var disx = endx - x;
+				var temp = disx+nowtop;
+				if (temp > 0) {
+					temp = 0;
+				}else {
+					temp = temp<-140? -140: temp;
+				}
+
+				$(oUl).css('top',temp);
+			});
 	}
 });

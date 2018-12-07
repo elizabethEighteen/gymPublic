@@ -515,11 +515,15 @@
 			.paySlected {
 				width: 18/@r;
 				height: 18/@r;
-				background: url(../img/icon_choiced@2x.png) no-repeat;
+				background: url(../img/icon_choice@2x.png) no-repeat;
 				background-size: 18/@r 18/@r;
 				position: absolute;
 				top: 11/@r;
 				right: 22/@r;
+				&.active {
+					background: url(../img/icon_choiced@2x.png) no-repeat;
+					background-size: 18/@r 18/@r;
+				}
 			}
 			.payNotSelected {
 				width: 18/@r;
@@ -529,6 +533,10 @@
 				position: absolute;
 				top: 11/@r;
 				right: 22/@r;
+				&.active {
+					background: url(../img/icon_choiced@2x.png) no-repeat;
+					background-size: 18/@r 18/@r;
+				}
 			}
 		}
 		

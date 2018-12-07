@@ -8,7 +8,7 @@ $(function(){
 	/*编辑个人信息*/
 	var $editPersonalInfo = $('#head .bottom button');
 	$editPersonalInfo.on('click',function(){
-		window.location.href = '../html/editPersonalInfo.html';
+		window.location.href = '../../html/editPersonalInfo.html';
 	});
 	/*余额*/
 	(function(){

@@ -70,6 +70,16 @@ $(function(){
 				return;
 			}			
 		});
+		/*切换支付方式*/
+		(function(){
+			var $payStyleBtns = $('#pay li strong');
+			$payStyleBtns.on('click',function(){
+				$payStyleBtns.each(function(){
+					$(this).removeClass('active');
+				});
+				$(this).addClass('active');
+			});
+		})();
 		
 	})();
 	/*picker*/
@@ -94,43 +104,65 @@ $(function(){
 		$gradeBtn.on('click',function(){
 			showPicker($gradePicker,$gradeUl);
 			$genderPicker.hide();
+			$gradeUl.css('top',0);
 		});
 		$gradeLis.on('click',function(){
-			$gradePicker.hide();
+			$gradePicker.hide();		
 			$gradeBtn.html($(this).html()+`<strong></strong>`);
 		});
 		/*选择年级按钮点击*/
 		function showPicker(pickerName,ulName) {
-		var oUl = ulName[0];
-		var n = 0;
-		pickerName.toggle();
-		oUl.onmousewheel = fn;
+			var oUl = ulName[0];
+			var n = 0;
+			pickerName.toggle();
 
-		if (oUl.addEventListener) {
-			oUl.addEventListener('DOMMouseScroll', fn, false);
-		}
-		function fn(ev) {
-			var ev = ev || event;
-			var b = true;			
-			if (ev.wheelDelta) {
-				b = ev.wheelDelta > 0 ? true : false;
-			} else {
-				b = ev.detail < 0 ? true : false;
-			}			
-			if ( b ) {
-				n++;
-				n = n>0 ? 0 : n;
-				ulName.css('top',n*10);
-			} else {
-				n--;
-				n = n<-14 ? -14 : n;
-				ulName.css('top',n*10);
+			oUl.onmousewheel = fn;
+			if (oUl.addEventListener) {
+				oUl.addEventListener('DOMMouseScroll', fn, false);
 			}
-			if (ev.preventDefault) {
-				ev.preventDefault();
+			function fn(ev) {
+				var ev = ev || event;
+				var b = true;			
+				if (ev.wheelDelta) {
+					b = ev.wheelDelta > 0 ? true : false;
+				} else {
+					b = ev.detail < 0 ? true : false;
+				}			
+				if ( b ) {
+					n++;
+					n = n>0 ? 0 : n;
+					ulName.css('top',n*10);
+				} else {
+					n--;
+					n = n<-14 ? -14 : n;
+					ulName.css('top',n*10);
+				}
+				if (ev.preventDefault) {
+					ev.preventDefault();
+				}
+				return false;	
 			}
-			return false;	
+			var x,endx;
+			var nowtop = parseInt($gradeUl.css('top'));
+			oUl.addEventListener('touchstart',function(ev){
+				var touch = ev.targetTouches[0];
+				 x = parseInt(touch.pageY);
+				 nowtop = parseInt($gradeUl.css('top'));
+				
+			});
+			oUl.addEventListener('touchmove',function(ev){
+				var touch = ev.targetTouches[0];
+				endx = parseInt(touch.pageY);				
+				var disx = endx - x;
+				var temp = disx+nowtop;
+				if (temp > 0) {
+					temp = 0;
+				}else {
+					temp = temp<-140? -140: temp;
+				}
+
+				$(oUl).css('top',temp);
+			});
 		}
-	}
 	})();
 });

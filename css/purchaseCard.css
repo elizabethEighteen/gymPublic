@@ -574,11 +574,15 @@ p {
 #pay ul li .paySlected {
   width: 0.72rem;
   height: 0.72rem;
-  background: url(../img/icon_choiced@2x.png) no-repeat;
+  background: url(../img/icon_choice@2x.png) no-repeat;
   background-size: 0.72rem 0.72rem;
   position: absolute;
   top: 0.44rem;
   right: 0.88rem;
+}
+#pay ul li .paySlected.active {
+  background: url(../img/icon_choiced@2x.png) no-repeat;
+  background-size: 0.72rem 0.72rem;
 }
 #pay ul li .payNotSelected {
   width: 0.72rem;
@@ -588,6 +592,10 @@ p {
   position: absolute;
   top: 0.44rem;
   right: 0.88rem;
+}
+#pay ul li .payNotSelected.active {
+  background: url(../img/icon_choiced@2x.png) no-repeat;
+  background-size: 0.72rem 0.72rem;
 }
 #pay button {
   width: 9.64rem;
