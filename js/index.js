@@ -1,5 +1,6 @@
 $(function () {
 	/*mask高度计算*/
+	alert(1);
 	(function () {
 		var $mask = $('#mask');
 		var $screenHeight = $(document).height()
