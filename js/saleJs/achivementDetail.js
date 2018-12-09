@@ -1,4 +1,28 @@
 $(function(){
+	/*防止body滑动*/
+	(function () {
+		var $mask = $('#mask');
+		var $screenHeight = $(document).height()
+		$mask.height($screenHeight);
+	})();
+	function stopScroll() {
+    // 弹出时
+	    $('body').on('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'hidden'
+	    })
+	}
+
+	function recoverScroll() {
+	    // 隐藏时
+	    $('body').off('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'auto'
+	    })
+	}
+	function preventDefaultFn(event) {
+	    event.preventDefault();
+	}
 	/*datePicker*/
 	var $yearBtn = $('#head .year');
 	var $monthBtn = $('#head .month');
@@ -12,18 +36,22 @@ $(function(){
 	$yearBtn.on('click',function(){
 		showPicker($YearPicker,$yearUl);
 		$monthPicker.hide();
+		stopScroll();
 	});
 	$monthBtn.on('click',function(){
 		showPicker($monthPicker,$monthUl);
 		$YearPicker.hide();
+		stopScroll();
 	});
 	$yearLis.on('click',function (){
 		$YearPicker.hide();
 		$yearBtn.html($(this).html()+'年');
+		recoverScroll();
 	});
 	$monthLis.on('click',function (){
 		$monthPicker.hide();
 		$monthBtn.html($(this).html()+'月');
+		recoverScroll();
 	});							
 
 	function showPicker(pickerName,ulName) {

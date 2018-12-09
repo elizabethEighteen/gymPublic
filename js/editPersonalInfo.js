@@ -21,4 +21,11 @@ $(function () {
 	(function(){
 		$('#con .basicInfoUl .selectBirthday').calendar();
 	})();
+	/*save*/
+	(function(){
+		var $saveBtn = $('#foot button');
+		$saveBtn.bind('click',function(){
+			window.location.href = '../html/mine.html';
+		});
+	})();
 })

@@ -1,12 +1,28 @@
 $(function () {
 	/*mask高度计算*/
-	alert(1);
 	(function () {
 		var $mask = $('#mask');
 		var $screenHeight = $(document).height()
 		$mask.height($screenHeight);
 	})();
+	function stopScroll() {
+    // 弹出时
+	    $('body').on('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'hidden'
+	    })
+	}
 
+	function recoverScroll() {
+	    // 隐藏时
+	    $('body').off('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'auto'
+	    })
+	}
+	function preventDefaultFn(event) {
+	    event.preventDefault();
+	}
 
 	/*banner*/
 	(function () {
@@ -43,10 +59,12 @@ $(function () {
 			$mask.css('display','block');
 			$newPeople.css('display','block');
 			clearTimeout(timmer);
+			stopScroll();
 		}
 		$close.on('click',function(){
 			$mask.css('display','none');
 			$newPeople.css('display','none');
+			recoverScroll();
 		});
 
 

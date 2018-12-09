@@ -5,6 +5,25 @@ $(function(){
 		var $screenHeight = $(document).height()
 		$mask.height($screenHeight);
 	})();
+	function stopScroll() {
+    // 弹出时
+	    $('body').on('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'hidden'
+	    })
+	}
+
+	function recoverScroll() {
+	    // 隐藏时
+	    $('body').off('touchmove', preventDefaultFn);
+	    $('body').css({
+	        'overflow': 'auto'
+	    })
+	}
+	function preventDefaultFn(event) {
+	    event.preventDefault();
+	}
+
 
 
 	/**/
@@ -40,6 +59,9 @@ $(function(){
 			}else{
 				$mask.css('display','block');
 				$writeInfo.css('display','block');
+				$('#writeInfo .genderPicker').css('display','none');
+				$('#writeInfo .gradePicker').css('display','none');
+				stopScroll();
 			}
 			
 		});//点击购买
@@ -50,6 +72,7 @@ $(function(){
 		$close.on('click',function(){
 			$pay.css('display','none');
 			$mask.css('display','none');
+			recoverScroll();
 		});
 		$coupon.on('click',function(){
 			window.location.href = '../html/chooseConpou.html'
@@ -60,12 +83,14 @@ $(function(){
 			$mask.css('display','block');
 			$useInstruction.css('display','block');
 			$isUseInstruction = true;
+			stopScroll();
 		});
 		$mask.on('click',function(){
 			if ($isUseInstruction) {
 				$mask.css('display','none');
 				$useInstruction.css('display','none');
 				$isUseInstruction = false;
+				recoverScroll();
 			}else{
 				return;
 			}			
@@ -158,7 +183,7 @@ $(function(){
 				if (temp > 0) {
 					temp = 0;
 				}else {
-					temp = temp<-140? -140: temp;
+					temp = temp<-185? -185: temp;
 				}
 
 				$(oUl).css('top',temp);
