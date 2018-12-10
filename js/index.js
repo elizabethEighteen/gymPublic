@@ -71,10 +71,27 @@ $(function () {
 	})();
 	/*点击购买会员卡*/
 	(function(){
+		var $mask = $('#mask');
 		var $phurchaseImedeiately = $('#search button');
+		var $login = $('#login');
+		var $cancel = $login.find('.cancel');
+		var $sure = $login.find('.sure');
 		$phurchaseImedeiately.on('click',function(){
-			
-			window.location.href = './html/phurchaseCard.html';
+			$mask.show();
+			$login.show();
+			stopScroll();
+			// window.location.href = './html/phurchaseCard.html';
+		});
+		$cancel.on('click',function(){
+			$mask.hide();
+			$login.hide();
+			recoverScroll();
+		})
+		$sure.on('click',function(){
+			$mask.hide();
+			$login.hide();
+			recoverScroll();
+			window.location.href = './html/bindPhone.html';
 		});
 	})();
 	/*提醒登录*/

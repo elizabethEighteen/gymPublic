@@ -1,1 +1,360 @@
-a,button,input{-webkit-tap-highlight-color:transparent}button,input{-webkit-appearance:none;border-radius:0;border:none;background-color:#fff}body{-webkit-user-select:none;-webkit-text-size-adjust:100%}body *{font-family:PingFang-SC-Medium}a{text-decoration:none}button,input{outline:0;vertical-align:middle}img{vertical-align:middle}ul{list-style:none}body,h1,h3,h4,p,ul{margin:0;padding:0}.left{float:left}.right{float:right}.clearfix:after{content:'';display:block;clear:both}#head{width:15rem;height:11.4rem;position:relative}#head .top{width:15rem;height:4.56rem;background-color:#ECCA4C;position:absolute;top:0;left:0}#head .top img{width:3.92rem;height:1.32rem;position:absolute;left:.48rem;top:.48rem}#head .bottom{width:15rem;height:6.84rem;background-color:#212121;position:absolute;top:4.52rem;left:0}#head .bottom .name{width:4.2rem;height:.6rem;line-height:.6rem;font-size:.6rem;color:#fff;text-align:center;position:absolute;top:2.64rem;left:5.4rem}#head .bottom .gender{width:2.24rem;height:.56rem;line-height:.56rem;font-size:.56rem;color:#fff;position:absolute;top:4.08rem;left:3.2rem}#head .bottom .birthday{width:8rem;height:.56rem;line-height:.56rem;font-size:.56rem;text-align:right;color:#fff;position:absolute;top:4.08rem;right:1.2rem}#head .bottom button{width:.76rem;height:.76rem;background:url(../img/icon_edit@2x.png) no-repeat;background-size:.76rem .76rem;position:absolute;top:.48rem;right:3.44rem}#head .bigHeadImage{width:5.08rem;height:5.08rem;border-radius:2.52rem;background:url(../img/bigHeadImage.jpg) no-repeat;background-size:5.08rem 5.08rem;position:absolute;top:1.64rem;left:4.96rem}#con{width:15rem;height:14.88rem;position:relative;margin-top:.76rem}#con ul{width:14.12rem;position:absolute;top:0;left:.44rem}#con ul li{width:14.12rem;height:3.28rem;box-sizing:border-box;border-radius:.32rem;border:.12rem solid #666;margin-bottom:.44rem;position:relative}#con ul li img{width:1.56rem;height:1.56rem;position:absolute;top:.88rem;left:.96rem}#con ul li .special{width:2.08rem;height:1.56rem;position:absolute;top:.88rem;left:.72rem}#con ul li p{width:4rem;height:.68rem;line-height:.68rem;font-size:.68rem;color:#333;position:absolute;top:1.32rem;left:3.96rem}#con ul li span{width:.44rem;height:.72rem;background:url(../img/icon_minemore@2x.png) no-repeat;background-size:.44rem .72rem;position:absolute;right:.72rem;top:1.28rem}#foot{width:15rem;height:2.8rem;margin-bottom:2.24rem;position:relative}#foot button{width:13.32rem;height:1.84rem;border-radius:.16rem;background-color:#ECCA4C;color:#333;font-size:.68rem;position:absolute;top:.24rem;left:.84rem}#mask{display:none;width:15rem;background-color:rgba(0,0,0,.5);position:absolute;top:0;left:0}#exitDialog{display:none;width:13.28rem;height:6.04rem;background-color:#fff;border-radius:.4rem;position:fixed;top:6rem;left:.88rem}#exitDialog h3{width:1.6rem;height:.68rem;line-height:.68rem;font-size:.68rem;font-weight:400;color:#333;background:url(../img/icon_dlts@2x.png) no-repeat 0 .04rem;background-size:.56rem .56rem;padding-left:.88rem;position:absolute;top:.8rem;left:5.56rem}#exitDialog p{width:13.28rem;height:.6rem;line-height:.6rem;font-size:.6rem;color:#333;text-align:center;position:absolute;top:2.28rem;left:0}#exitDialog .sure{width:6.2rem;height:1.6rem;line-height:1.6rem;font-size:.6rem;color:#ECCA4C;text-align:center;position:absolute;bottom:0;left:.4rem}#exitDialog .cancel{width:6.2rem;height:1.6rem;line-height:1.6rem;font-size:.6rem;color:#999;text-align:center;position:absolute;bottom:0;right:.4rem}#exitDialog .lineH{width:13.28rem;height:.04rem;background-color:#EEE;position:absolute;bottom:1.68rem;left:0}#exitDialog .lineV{width:.04rem;height:1.68rem;background-color:#EEE;position:absolute;bottom:0;left:6.6rem}#tab{width:15rem;height:1.92rem;background:#000;position:fixed;bottom:0;left:0}#tab .index{width:1.92rem;height:.8rem;background:url(../img/icon_home@2x.png) no-repeat .48rem .16rem;background-size:.96rem .96rem;padding-top:1.12rem;line-height:.8rem;font-size:.48rem;color:#fff;position:absolute;top:0;left:2.8rem;text-align:center}#tab .index.active{background:url(../img/icon_home_selected@2x.png) no-repeat .48rem .16rem;background-size:.96rem .96rem;color:#ECCA4C}#tab .mine{width:1.92rem;height:.8rem;background:url(../img/icon_mine@2x.png) no-repeat .48rem .16rem;background-size:.96rem .96rem;padding-top:1.12rem;line-height:.8rem;font-size:.48rem;color:#fff;position:absolute;top:0;right:2.8rem;text-align:center}#tab .mine.active{background:url(../img/icon_mine_selected@2x.png) no-repeat .48rem .16rem;background-size:.96rem .96rem;color:#ECCA4C}#test{width:6rem;height:1.2rem;line-height:1.2rem;font-size:.6rem;color:red;background-color:#fff;position:absolute;top:0;right:0;text-align:center}
+/*移动端默认样式*/
+/*清除掉按下时会有一个灰色阴影*/
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*清除掉ios自带圆角*/
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+}
+body {
+  /*禁止选中文字*/
+  -webkit-user-select: none;
+  /* iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。关闭字体大小自动调整功能*/
+  -webkit-text-size-adjust: 100%;
+}
+/*字体设置*/
+body * {
+  font-family: PingFang-SC-Medium;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+body,
+ul,
+h1,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*变量*/
+#head {
+  width: 15rem;
+  height: 11.4rem;
+  position: relative;
+}
+#head .top {
+  width: 15rem;
+  height: 4.56rem;
+  background-color: #ECCA4C;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#head .top img {
+  width: 3.92rem;
+  height: 1.32rem;
+  position: absolute;
+  left: 0.48rem;
+  top: 0.48rem;
+}
+#head .bottom {
+  width: 15rem;
+  height: 6.84rem;
+  background-color: #212121;
+  position: absolute;
+  top: 4.52rem;
+  left: 0;
+}
+#head .bottom .name {
+  width: 4.2rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 2.64rem;
+  left: 5.4rem;
+}
+#head .bottom .gender {
+  width: 2.24rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  color: #fff;
+  position: absolute;
+  top: 4.08rem;
+  left: 3.2rem;
+}
+#head .bottom .birthday {
+  width: 8rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 4.08rem;
+  right: 1.2rem;
+}
+#head .bottom button {
+  width: 0.76rem;
+  height: 0.76rem;
+  background: url(../img/icon_edit@2x.png) no-repeat;
+  background-size: 0.76rem 0.76rem;
+  position: absolute;
+  top: 0.48rem;
+  right: 3.44rem;
+}
+#head .bigHeadImage {
+  width: 5.08rem;
+  height: 5.08rem;
+  border-radius: 2.52rem;
+  background: url(../img/bigHeadImage.jpg) no-repeat;
+  background-size: 5.08rem 5.08rem;
+  position: absolute;
+  top: 1.64rem;
+  left: 4.96rem;
+}
+#con {
+  width: 15rem;
+  height: 18.6rem;
+  position: relative;
+  margin-top: 0.76rem;
+}
+#con ul {
+  width: 14.12rem;
+  position: absolute;
+  top: 0;
+  left: 0.44rem;
+}
+#con ul li {
+  width: 14.12rem;
+  height: 3.28rem;
+  box-sizing: border-box;
+  border-radius: 0.32rem;
+  border: 0.04rem solid #999;
+  margin-bottom: 0.44rem;
+  position: relative;
+}
+#con ul li .phoneNumber {
+  width: 5.6rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  color: #333333;
+  text-align: right;
+  position: absolute;
+  right: 0.76rem;
+  top: 1.4rem;
+}
+#con ul li img {
+  width: 1.56rem;
+  height: 1.56rem;
+  position: absolute;
+  top: 0.88rem;
+  left: 0.96rem;
+}
+#con ul li .special {
+  width: 2.08rem;
+  height: 1.56rem;
+  position: absolute;
+  top: 0.88rem;
+  left: 0.72rem;
+}
+#con ul li .detail {
+  width: 4rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  color: #333;
+  position: absolute;
+  top: 1.32rem;
+  left: 3.96rem;
+}
+#con ul li span {
+  width: 0.44rem;
+  height: 0.72rem;
+  background: url(../img/icon_minemore@2x.png) no-repeat;
+  background-size: 0.44rem 0.72rem;
+  position: absolute;
+  right: 0.72rem;
+  top: 1.28rem;
+}
+#foot {
+  width: 15rem;
+  height: 2.8rem;
+  margin-bottom: 2.24rem;
+  position: relative;
+}
+#foot button {
+  width: 13.32rem;
+  height: 1.84rem;
+  border-radius: 0.16rem;
+  background-color: #ECCA4C;
+  color: #333333;
+  font-size: 0.68rem;
+  position: absolute;
+  top: 0.24rem;
+  left: 0.84rem;
+}
+#mask {
+  display: none;
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#exitDialog {
+  display: none;
+  width: 13.28rem;
+  height: 6.04rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  position: fixed;
+  top: 6rem;
+  left: 0.88rem;
+}
+#exitDialog h3 {
+  width: 1.6rem;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  font-size: 0.68rem;
+  font-weight: normal;
+  color: #333;
+  background: url(../img/icon_dlts@2x.png) no-repeat 0 0.04rem;
+  background-size: 0.56rem 0.56rem;
+  padding-left: 0.88rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 5.56rem;
+}
+#exitDialog p {
+  width: 13.28rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.6rem;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top: 2.28rem;
+  left: 0;
+}
+#exitDialog .sure {
+  width: 6.2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #ECCA4C;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0.4rem;
+}
+#exitDialog .cancel {
+  width: 6.2rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #999;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0.4rem;
+}
+#exitDialog .lineH {
+  width: 13.28rem;
+  height: 0.04rem;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 1.68rem;
+  left: 0;
+}
+#exitDialog .lineV {
+  width: 0.04rem;
+  height: 1.68rem;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  left: 6.6rem;
+}
+#tab {
+  width: 15rem;
+  height: 1.92rem;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#tab .index {
+  width: 1.92rem;
+  height: 0.8rem;
+  background: url(../img/icon_home@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  padding-top: 1.12rem;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 2.8rem;
+  text-align: center;
+}
+#tab .index.active {
+  background: url(../img/icon_home_selected@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  color: #ECCA4C;
+}
+#tab .mine {
+  width: 1.92rem;
+  height: 0.8rem;
+  background: url(../img/icon_mine@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  padding-top: 1.12rem;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 2.8rem;
+  text-align: center;
+}
+#tab .mine.active {
+  background: url(../img/icon_mine_selected@2x.png) no-repeat 0.48rem 0.16rem;
+  background-size: 0.96rem 0.96rem;
+  color: #ECCA4C;
+}
+#test {
+  width: 6rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: red;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
