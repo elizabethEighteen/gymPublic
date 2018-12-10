@@ -26,7 +26,8 @@ body * {
 a {
   text-decoration: none;
 }
-input {
+input,
+button {
   outline: none;
   vertical-align: middle;
 }
@@ -238,6 +239,7 @@ p {
   display: none;
   width: 13.28rem;
   height: 8.04rem;
+  border-radius: 0.4rem;
   background-color: #fff;
   position: fixed;
   top: 8rem;

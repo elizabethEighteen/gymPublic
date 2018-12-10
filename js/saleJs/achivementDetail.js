@@ -87,25 +87,32 @@ $(function(){
 		}
 		/*touch*/
 		var x,endx;
-			var nowtop = parseInt(ulName.css('top'));
-			ulName[0].addEventListener('touchstart',function(ev){
-				var touch = ev.targetTouches[0];
-				 x = parseInt(touch.pageY);
-				 nowtop = parseInt(ulName.css('top'));
-				;
-			});
-			ulName[0].addEventListener('touchmove',function(ev){
-				var touch = ev.targetTouches[0];
-				endx = parseInt(touch.pageY);				
-				var disx = endx - x;
-				var temp = disx+nowtop;
-				if (temp > 0) {
-					temp = 0;
-				}else {
-					temp = temp<-140? -140: temp;
-				}
+		var nowtop = parseInt(ulName.css('top'));
+		ulName[0].addEventListener('touchstart',function(ev){
+			var touch = ev.targetTouches[0];
+			 x = parseInt(touch.pageY);
+			 nowtop = parseInt(ulName.css('top'));
+			;
+		});
+		ulName[0].addEventListener('touchmove',function(ev){
+			var touch = ev.targetTouches[0];
+			endx = parseInt(touch.pageY);				
+			var disx = endx - x;
+			var temp = disx+nowtop;
+			if (temp > 0) {
+				temp = 0;
+			}else {
+				temp = temp<-140? -140: temp;
+			}
 
-				$(oUl).css('top',temp);
-			});
+			$(oUl).css('top',temp);
+		});
 	}
+	/*提现阶梯*/
+	(function(){
+		var $withDrawFloorBtn = $('#conTime .title');
+		$withDrawFloorBtn.on('click',function(){
+			window.location.href = '../../html/useInstruction.html';
+		});
+	})();
 });
