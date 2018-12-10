@@ -8,7 +8,7 @@ $(function(){
 	})();
 	/*使用优惠券*/
 	(function(){
-		var $useCouponsBtn = $('#con button');
+		var $useCouponsBtn = $('#con .useImediate');
 		$useCouponsBtn.on('click',function(){
 			window.location.href = '../index.html';
 		});

@@ -13,7 +13,7 @@ $(function(){
 	/*余额*/
 	(function(){
 		var $lis = $('#con li');
-		var $withDraw = $lis.eq(0).find('button');
+		var $withDraw = $lis.eq(0).find('.withDraw');
 		$withDraw.on('click',function(){
 			window.location.href = '../../html/saleHtml/applyWithDraw.html';
 		});
