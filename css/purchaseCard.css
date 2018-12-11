@@ -61,6 +61,31 @@ p {
 #con {
   width: 15rem;
 }
+#con .search {
+  width: 15rem;
+  height: 2.24rem;
+  position: relative;
+}
+#con .search input {
+  width: 11rem;
+  height: 1.52rem;
+  position: absolute;
+  top: 0.76rem;
+  left: 2rem;
+  font-size: 0.56rem;
+  border: 0.04rem solid #E6E6E6;
+  box-sizing: border-box;
+  text-indent: 1em;
+}
+#con .search .triangle {
+  width: 0.36rem;
+  height: 0.4rem;
+  background: url(../img/icon_getclick@2x.png) no-repeat;
+  background-size: 0.36rem 0.4rem;
+  position: absolute;
+  top: 1.28rem;
+  left: 12.4rem;
+}
 #con ul {
   width: 15rem;
 }

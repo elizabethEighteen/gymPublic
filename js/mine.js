@@ -34,7 +34,7 @@ $(function(){
 	/*特需套餐*/
 	(function (){
 		var $lis = $('#con li');
-		$lis.eq(3).on('click',function(){
+		$lis.eq(4).on('click',function(){
 			window.location.href = '../html/specialMeal.html'
 		});
 	})();
